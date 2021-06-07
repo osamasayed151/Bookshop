@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.VishnuSivadasVS:Advanced-HttpURLConnection:1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Advanced-HttpURLConnection-1.2.aar/c2d29f2399aae14bd02481e476cd46a9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Advanced-HttpURLConnection-1.2.aar/c2d29f2399aae14bd02481e476cd46a9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.VishnuSivadasVS/Advanced-HttpURLConnection/1.2/18028afe9c752b513da6979b8060fc67117979ab/Advanced-HttpURLConnection-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
