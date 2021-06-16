@@ -11,11 +11,12 @@
     <color name="b">#E9393B</color>
     <color name="c">#C5E6FF</color>
     <color name="d">#EC9948</color>
-    <color name="e">#2F2B5B</color>
+    <color name="e">#635DAC</color>
     <color name="f">#AEABBC</color>
     <color name="g">#787594</color>
     <color name="k">#DCDCDD</color>
     <color name="color_text">#000</color>
     <color name="btn_login">#538DCC</color>
-    <color name="text_signup">#3E38CC</color>
+    <color name="text_signup">#3E39C2</color>
+    <color name="red">#F70303</color>
 </resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    style="@style/CardView.Light"
+    app:cardCornerRadius="8dp"
+    android:elevation="3dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    app:cardBackgroundColor="@color/e">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img1"/>
+
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Name the Book"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <android.widget.Button
+        android:id="@+id/favoriteStatus"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Inverse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_favorite_wight" />
+
+    <TextView
+        android:id="@+id/bookDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookName"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:text="A life unlike the ordinary"
+        android:textColor="@color/a"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/imageView"
+        android:text="$18,30"
+        android:textColor="@color/a"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/addBasket"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/text_signup"
+                android:text="@string/btn_add_Basket"
+                android:textAllCaps="false"
+                android:textColor="@color/a"
+                android:textStyle="bold"
+                android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/before2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

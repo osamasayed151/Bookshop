@@ -1,4 +1,4 @@
-package com.example.bookshop;
+package com.example.bookshop.welcome;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.bookshop.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
@@ -79,7 +80,7 @@ public class SignUp extends AppCompatActivity {
                                     if(result.equals("Sign Up Success")){
                                         progressBar.setVisibility(View.GONE);
                                         Toast.makeText( SignUp.this, result, Toast.LENGTH_SHORT ).show();
-                                        in = new Intent(getBaseContext(),Login.class);
+                                        in = new Intent(getBaseContext(), Login.class);
                                         startActivity(in);
                                         finish();
                                     }else{

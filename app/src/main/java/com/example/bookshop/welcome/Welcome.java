@@ -1,4 +1,4 @@
-package com.example.bookshop;
+package com.example.bookshop.welcome;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import com.example.bookshop.MainActivity;
+import com.example.bookshop.R;
 
 public class Welcome extends AppCompatActivity {
 
@@ -17,7 +20,7 @@ public class Welcome extends AppCompatActivity {
         getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
         super.onCreate( savedInstanceState );
         setContentView( R.layout.wlcome );
-        sharedPreferences = getSharedPreferences(Login.BOOK_FILE,MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences( Login.BOOK_FILE,MODE_PRIVATE);
         final String username = sharedPreferences.getString(Login.USERNAME_KEY,"-1");
         final String password = sharedPreferences.getString(Login.PASSWORD_KEY,"-1");
         Thread t1 = new Thread( new Runnable() {

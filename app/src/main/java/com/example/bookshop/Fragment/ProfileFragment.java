@@ -1,20 +1,18 @@
-package com.example.bookshop.UIHome;
+package com.example.bookshop.Fragment;
 
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.TextView;
-
-        import com.example.bookshop.Login;
-        import com.example.bookshop.R;
-        import androidx.annotation.NonNull;
-        import androidx.annotation.Nullable;
-        import androidx.fragment.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import com.example.bookshop.welcome.Login;
+import com.example.bookshop.R;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 public class ProfileFragment extends Fragment {
-    Intent in;
 
     public ProfileFragment() {
         // Required empty public constructor

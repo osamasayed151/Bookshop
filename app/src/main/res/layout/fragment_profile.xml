@@ -4,32 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".UIHome.ProfileFragment">
+    tools:context=".Fragment.ProfileFragment">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="20dp"
-        app:cardMaxElevation="20dp"
-        android:layout_marginBottom="20dp">
         <TextView
             android:id="@+id/exit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Log out"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:textSize="25sp"
             android:padding="10dp"
             android:textColor="@color/color_text"
             android:drawableEnd="@drawable/ic_exit"/>
 
-    </androidx.cardview.widget.CardView>
 
 
 

@@ -1,4 +1,4 @@
-package com.example.bookshop;
+package com.example.bookshop.welcome;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +17,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.bookshop.MainActivity;
+import com.example.bookshop.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
@@ -60,14 +62,14 @@ public class Login extends AppCompatActivity {
         tvSignup.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(getBaseContext(),SignUp.class);
+                in = new Intent(getBaseContext(), SignUp.class);
                 startActivity(in);
             }
         } );
         tvForgotpass.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(getBaseContext(),ForgotPassword.class);
+                in = new Intent(getBaseContext(), ForgotPassword.class);
                 startActivity(in);
             }
         } );
@@ -110,7 +112,7 @@ public class Login extends AppCompatActivity {
                                             editor.putString(PASSWORD_KEY,passwor);
                                             editor.apply();
                                         }
-                                        in = new Intent(getBaseContext(),MainActivity.class);
+                                        in = new Intent(getBaseContext(), MainActivity.class);
                                         startActivity(in);
                                         finish();
                                     }else{

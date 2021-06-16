@@ -3,4 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_add_Basket">Add Basket</string>
+    <string name="Add_to_Basket">Add to Basket</string>
+    <string name="todo">TODO</string>
 </resources>

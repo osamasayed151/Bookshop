@@ -12,17 +12,13 @@
         android:id="@+id/main_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorAccent"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:layout_alignParentBottom="true"/>
-
-
+        android:background="@color/e"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <FrameLayout
         android:id="@+id/framelayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1" />
 
 
@@ -30,8 +26,8 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:mbn_circleColor="@color/colorAccent"
-        app:mbn_backgroundBottomColor="@color/colorAccent"
+        app:mbn_circleColor="@color/e"
+        app:mbn_backgroundBottomColor="@color/e"
         app:mbn_countBackgroundColor="#FF0008"
         app:mbn_countTextColor="#FFFFFF"
         app:mbn_defaultIconColor="#FFFFFF"

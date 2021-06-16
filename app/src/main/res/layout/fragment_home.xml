@@ -1,21 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UIHome.HomeFragment">
+    android:fitsSystemWindows="true"
+    tools:context=".Fragment.HomeFragment">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <ImageView
+        android:id="@+id/fragHome_img"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"/>
-    </com.google.android.material.appbar.AppBarLayout>
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img1"
+        android:scaleType="centerCrop"/>
+
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_below="@id/fragHome_img"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/newest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Newest"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_text"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerNewest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newest"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bestsellers"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/recyclerNewest"
+                android:textColor="@color/color_text"/>
+
+            <TextView
+                android:id="@+id/homeSeeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textSize="15sp"
+                android:textColor="@color/g"
+                android:layout_marginBottom="3dp"
+
+                android:layout_above="@id/recyclerBestsellers"
+                android:layout_alignParentEnd="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerBestsellers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/best"
+                android:layout_marginTop="3dp"/>
+
+        </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
-</>
+
+
+</RelativeLayout>
